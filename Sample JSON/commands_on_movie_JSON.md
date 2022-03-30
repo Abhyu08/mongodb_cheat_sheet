@@ -1,4 +1,9 @@
 ## mongoimport --db test --collection movie --file D:\movie.json
+```
+operators to use in find
+==== $gt, $lt, $eq,$lte $ne $in, $nin, $exists, $mod, $type, $size, $elemMatch, $not
+$and, $or, $not
+```
  ```
  1. to import JSON:
  mongoimport --db admin --collection movie --file D:\movie.json
