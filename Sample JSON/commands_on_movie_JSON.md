@@ -1,4 +1,4 @@
- mongoimport --db test --collection movie --file D:\movie.json
+mongoimport --db test --collection movie --file D:\movie.json
  
  1. to import JSON:
  mongoimport --db admin --collection movie --file D:\movie.json
