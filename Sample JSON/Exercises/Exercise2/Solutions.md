@@ -1,8 +1,9 @@
+```
 Create a Employee Collection add 5 documents:
 Example:
 {empno:111,ename:”Deepali Vaidya”,sal:40000.00,dept:{deptno12,dname:,”Hr”,dloc:”Mumbai},
 Desg:”Analyst”,mgr:{name:”Satish”,num:111},project:[{name:”Project- 1”,Hrs:4},{name:”project- 2”,Hrs:4}]}
-
+```
 
     1. All Employee’s with the desg as ‘CLERK’ are now called as (AO) Administrative Officers. Update the Employee collection for this.
 >db.Emp.updateMany({Desg:'Cleark'},{$set :  {Desg:'AO'} });
@@ -151,8 +152,7 @@ And manager number to 3333
 
 
 
-    19. Increase salary by 10000 for all employees who are working on project-2 or project-3 or project-1
-Decrease bonus by 1000 rs And increase salary by 1000rs for all employees whose department location is Mumbai
+    19. Increase salary by 10000 for all employees who are working on project-2 or project-3 or project-1 .Decrease bonus by 1000 rs And increase salary by 1000rs for all employees whose department location is Mumbai
 
 >db.Emp.update(  { $or: [ { 'project.name':"Project-3" }  ,  { 'project.name':"Project-2" } , { 'project.name':"Project-1" } ] },  { $inc : {sal : 10000} } );
 
