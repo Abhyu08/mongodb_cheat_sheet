@@ -5,3 +5,4 @@
  >> To Import JSON:
   mongoimport --db db_name --collection collection_name --file "local_path";
   ex:  mongoimport --db admin --collection movie --file D:\movie.json
+  (Make sure to execute this command inside cmd-prompt and not in mongo-shell-cmd)
